@@ -108,6 +108,15 @@
   padding: 15px 25px;
 }
 
+.main__wrapper .section__bottom .bottom__header {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.main__wrapper .section__bottom .bottom__text {
+  margin: 30px 0;
+}
+
 .main__wrapper .section__bottom .bottom__list {
   list-style-type: none;
   display: -webkit-box;
