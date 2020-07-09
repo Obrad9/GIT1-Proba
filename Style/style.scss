@@ -16,7 +16,6 @@ $cards-color: rgb(53, 53, 53);
         background-color: black;
 
         .nav__link {
-            position: relative;
             text-decoration: none;
             display: block;
             padding: 17px 0;   
@@ -208,7 +207,7 @@ $cards-color: rgb(53, 53, 53);
 
                     .card__header{
                         margin-top: 50px;
-                        .header__word {
+                        .header__span {
                             font-size: 55px;
                         }
                     }

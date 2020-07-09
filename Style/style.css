@@ -19,7 +19,6 @@
 }
 
 .nav__list .nav__item .nav__link {
-  position: relative;
   text-decoration: none;
   display: block;
   padding: 17px 0;
@@ -229,7 +228,7 @@
   margin-top: 50px;
 }
 
-.main__wrapper .article__image .deck__cards .card .card--bottom .card__header .header__word {
+.main__wrapper .article__image .deck__cards .card .card--bottom .card__header .header__span {
   font-size: 55px;
 }
 
