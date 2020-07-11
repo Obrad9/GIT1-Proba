@@ -4,6 +4,12 @@
 }
 
 $cards-color: rgb(53, 53, 53);
+@mixin button-hero {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
 
 
 .nav__list {
@@ -63,26 +69,21 @@ $cards-color: rgb(53, 53, 53);
         margin: 25px 0;
         .hero__button {
             padding: 15px 30px;
-            margin: 25px 12px;
+            margin: 0 10px;
             border: none;
             font-size: 18px;
             border-radius: 7px;
-        }
-        .hero__button--inactive {
-            &:hover {
-                background-color: black;
-                color: white;
-                border: 1px solid white;
-                cursor: pointer;
-                padding: 15px 29px;
-            }
-        }
+        }        
         
         .hero__button--active {
-            background-color: black;
-            color: white;
-            border: 1px solid white;
-            cursor: pointer;
+            @include button-hero();
+        }
+
+        .hero__button--inactive {
+            &:hover {
+                @include button-hero();
+                padding-left: 28px;
+            }
         }
     }
 }
@@ -92,6 +93,7 @@ $cards-color: rgb(53, 53, 53);
     .section__front {
         padding: 15px 25px;
         font-family: Tahoma;
+
         .front__header {
             text-align: center;
             font-size: 35px;
@@ -192,7 +194,7 @@ $cards-color: rgb(53, 53, 53);
                 .card--top {
                     padding: 30px;
                     
-                    .card__inner__description {
+                    .card__inner--description {
                         margin-top: 100px;
                         text-align: center;
 

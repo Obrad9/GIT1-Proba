@@ -67,18 +67,10 @@
 
 .hero__section .hero__button--group .hero__button {
   padding: 15px 30px;
-  margin: 25px 12px;
+  margin: 0 10px;
   border: none;
   font-size: 18px;
   border-radius: 7px;
-}
-
-.hero__section .hero__button--group .hero__button--inactive:hover {
-  background-color: black;
-  color: white;
-  border: 1px solid white;
-  cursor: pointer;
-  padding: 15px 29px;
 }
 
 .hero__section .hero__button--group .hero__button--active {
@@ -86,6 +78,14 @@
   color: white;
   border: 1px solid white;
   cursor: pointer;
+}
+
+.hero__section .hero__button--group .hero__button--inactive:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  padding-left: 28px;
 }
 
 .main__wrapper .section__front {
@@ -212,16 +212,16 @@
   padding: 30px;
 }
 
-.main__wrapper .article__image .deck__cards .card .card--top .card__inner__description {
+.main__wrapper .article__image .deck__cards .card .card--top .card__inner--description {
   margin-top: 100px;
   text-align: center;
 }
 
-.main__wrapper .article__image .deck__cards .card .card--top .card__inner__description .card__text {
+.main__wrapper .article__image .deck__cards .card .card--top .card__inner--description .card__text {
   font-size: 20px;
 }
 
-.main__wrapper .article__image .deck__cards .card .card--top .card__inner__description .card__text span {
+.main__wrapper .article__image .deck__cards .card .card--top .card__inner--description .card__text span {
   color: #353535;
   font-weight: 700;
   margin-right: 10px;
