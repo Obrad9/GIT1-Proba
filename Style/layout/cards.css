@@ -1,0 +1,114 @@
+.article__image {
+  background-image: url("../Img/gym.png");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.article-deck__header {
+  position: relative;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  color: #353535;
+  padding: 20px 0;
+}
+
+.article-deck__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 30px;
+}
+
+.article-deck__cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 30px 7px 0 7px;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 7px;
+}
+
+.article-deck__cards .card__inner {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 250px;
+          flex: 1 1 250px;
+}
+
+.article-deck__cards .card--stiched {
+  z-index: 10;
+  margin-top: 10px;
+  padding-top: 7px;
+  width: 280px;
+  height: 42px;
+  font-size: 25px;
+  text-align: center;
+  color: #fff;
+  -webkit-box-shadow: 0px 2px 5px #888888;
+          box-shadow: 0px 2px 5px #888888;
+  background: #353535;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+  position: absolute;
+  left: -95px;
+  top: 0;
+}
+
+.article-deck__cards .card__inner--description {
+  margin: 100px 0 20px 0;
+  text-align: center;
+}
+
+.article-deck__cards .card__text span {
+  color: #353535;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.article-deck__cards .card--bottom {
+  padding: 30px;
+  background-color: #353535;
+  color: white;
+}
+
+.article-deck__cards .card__header {
+  margin-top: 50px;
+}
+
+.article-deck__cards .card__span-bot {
+  font-size: 55px;
+}
+
+.article-deck__cards .card__link {
+  padding: 10px 15px;
+  display: block;
+  width: 150px;
+  color: #353535;
+  background-color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.article-deck__cards .card__link:hover {
+  background-color: #353535;
+  color: white;
+  border: 2px solid white;
+}
+/*# sourceMappingURL=cards.css.map */

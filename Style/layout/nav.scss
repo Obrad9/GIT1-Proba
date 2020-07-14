@@ -1,0 +1,29 @@
+.nav {
+    width: auto;
+
+    &__list {
+        display: flex;
+    }
+    
+    &__item {
+        list-style-type: none;
+        flex: 1;        
+        text-align: center;
+        background-color: black;
+    }
+
+
+    &__link {
+        text-decoration: none;
+        display: block;
+        padding: 17px 0;   
+        background-color: black;  
+        font-size: 21px;
+        color: white;
+        letter-spacing: 2px;
+        
+        &:hover {
+            background-color: rgb(49, 49, 49);
+        }
+    }
+}

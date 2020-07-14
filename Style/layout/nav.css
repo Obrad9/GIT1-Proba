@@ -1,0 +1,33 @@
+.nav {
+  width: auto;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__item {
+  list-style-type: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  background-color: black;
+}
+
+.nav__link {
+  text-decoration: none;
+  display: block;
+  padding: 17px 0;
+  background-color: black;
+  font-size: 21px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.nav__link:hover {
+  background-color: #313131;
+}
+/*# sourceMappingURL=nav.css.map */
