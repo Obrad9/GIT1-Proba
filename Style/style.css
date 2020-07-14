@@ -1,6 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.nav {
+  width: auto;
 }
 
 .nav__list {
@@ -9,7 +15,7 @@
   display: flex;
 }
 
-.nav__list .nav__item {
+.nav__item {
   list-style-type: none;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -18,7 +24,7 @@
   background-color: black;
 }
 
-.nav__list .nav__item .nav__link {
+.nav__link {
   text-decoration: none;
   display: block;
   padding: 17px 0;
@@ -28,17 +34,17 @@
   letter-spacing: 2px;
 }
 
-.nav__list .nav__item .nav__link:hover {
+.nav__link:hover {
   background-color: #313131;
 }
 
-.hero__section .hero__image {
+.hero__image {
   width: 100%;
   height: 100vh;
   opacity: 0.6;
 }
 
-.hero__section .hero__header {
+.hero__header {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -55,7 +61,7 @@
   width: fit-content;
 }
 
-.hero__section .hero__button--group {
+.hero__buttons {
   position: absolute;
   top: 60%;
   left: 50%;
@@ -65,7 +71,7 @@
   margin: 25px 0;
 }
 
-.hero__section .hero__button--group .hero__button {
+.hero__btn {
   padding: 15px 30px;
   margin: 0 10px;
   border: none;
@@ -73,14 +79,14 @@
   border-radius: 7px;
 }
 
-.hero__section .hero__button--group .hero__button--active {
+.hero__btn--active {
   background-color: black;
   color: white;
   border: 1px solid white;
   cursor: pointer;
 }
 
-.hero__section .hero__button--group .hero__button--inactive:hover {
+.hero__btn--inactive:hover {
   background-color: black;
   color: white;
   border: 1px solid white;
@@ -88,12 +94,12 @@
   padding-left: 28px;
 }
 
-.main__wrapper {
+.wrapper {
   padding: 15px 25px 0 25px;
   font-size: 19px;
 }
 
-.main__wrapper .section__front .front__header {
+.wrapper .section__header {
   text-align: center;
   font-size: 35px;
   font-weight: 650;
@@ -101,20 +107,20 @@
   font-family: Tahoma;
 }
 
-.main__wrapper .horizontal--line {
+.wrapper .horizontal-line {
   margin: 30px;
 }
 
-.main__wrapper .section__bottom .bottom__header {
+.wrapper .section-bottom__header {
   font-size: 35px;
   margin-bottom: 20px;
 }
 
-.main__wrapper .section__bottom .bottom__text {
+.wrapper .section-bottom__text {
   margin: 30px 0;
 }
 
-.main__wrapper .section__bottom .bottom__list {
+.wrapper .section-bottom__list {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,19 +129,19 @@
   text-align: center;
 }
 
-.main__wrapper .section__bottom .bottom__list .bottom__item {
+.wrapper .section-bottom__item {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   font-size: 15px;
 }
 
-.main__wrapper .section__bottom .bottom__list .bottom__item .bottom__image {
+.wrapper .section-bottom__image {
   width: 220px;
   height: 200px;
 }
 
-.main__wrapper .article__image {
+.wrapper .article__image {
   background-image: url("../Img/gym.png");
   width: 100%;
   height: 100%;
@@ -144,7 +150,7 @@
   background-position: center;
 }
 
-.main__wrapper .article__image .deck__header {
+.wrapper .article-deck__header {
   position: relative;
   text-align: center;
   font-size: 45px;
@@ -153,7 +159,7 @@
   padding: 20px 0;
 }
 
-.main__wrapper .article__image .deck__cards {
+.wrapper .article-deck__cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,7 +169,7 @@
   padding-bottom: 30px;
 }
 
-.main__wrapper .article__image .deck__cards .card {
+.wrapper .article-deck__cards .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,13 +184,13 @@
   border-radius: 7px;
 }
 
-.main__wrapper .article__image .deck__cards .card .card__inner {
+.wrapper .article-deck__cards .card__inner {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 200px;
-          flex: 1 1 200px;
+      -ms-flex: 1 1 250px;
+          flex: 1 1 250px;
 }
 
-.main__wrapper .article__image .deck__cards .card .card__inner .card--stiched {
+.wrapper .article-deck__cards .card--stiched {
   z-index: 10;
   margin-top: 10px;
   padding-top: 7px;
@@ -203,32 +209,32 @@
   top: 0;
 }
 
-.main__wrapper .article__image .deck__cards .card .card--top .card__inner--description {
+.wrapper .article-deck__cards .card__inner--description {
   margin: 100px 0 20px 0;
   text-align: center;
 }
 
-.main__wrapper .article__image .deck__cards .card .card--top .card__inner--description .card__text span {
+.wrapper .article-deck__cards .card__text span {
   color: #353535;
   font-weight: 700;
   margin-right: 10px;
 }
 
-.main__wrapper .article__image .deck__cards .card .card--bottom {
+.wrapper .article-deck__cards .card--bottom {
   padding: 30px;
   background-color: #353535;
   color: white;
 }
 
-.main__wrapper .article__image .deck__cards .card .card--bottom .card__header {
+.wrapper .article-deck__cards .card__header {
   margin-top: 50px;
 }
 
-.main__wrapper .article__image .deck__cards .card .card--bottom .card__header .header__span {
+.wrapper .article-deck__cards .card__span-bot {
   font-size: 55px;
 }
 
-.main__wrapper .article__image .deck__cards .card .card--bottom .card__link {
+.wrapper .article-deck__cards .card__link {
   padding: 10px 15px;
   display: block;
   width: 150px;
@@ -243,52 +249,10 @@
   margin-top: 20px;
 }
 
-.main__wrapper .article__image .deck__cards .card .card--bottom .card__link:hover {
+.wrapper .article-deck__cards .card__link:hover {
   background-color: #353535;
   color: white;
   border: 2px solid white;
-}
-
-.main__wrapper .article__image .deck__cards .card--two .card--top .card--stiched {
-  background-color: #353535;
-}
-
-.main__wrapper .article__image .deck__cards .card--two .card--top .card__inner__description .card__text span {
-  color: #353535;
-}
-
-.main__wrapper .article__image .deck__cards .card--two .card--bottom {
-  background-color: #353535;
-}
-
-.main__wrapper .article__image .deck__cards .card--two .card--bottom .card__link {
-  color: #353535;
-}
-
-.main__wrapper .article__image .deck__cards .card--two .card--bottom .card__link:hover {
-  color: white;
-  background-color: #353535;
-}
-
-.main__wrapper .article__image .deck__cards .card--three .card--top .card--stiched {
-  background-color: #353535;
-}
-
-.main__wrapper .article__image .deck__cards .card--three .card--top .card__inner__description .card__text span {
-  color: #353535;
-}
-
-.main__wrapper .article__image .deck__cards .card--three .card--bottom {
-  background-color: #353535;
-}
-
-.main__wrapper .article__image .deck__cards .card--three .card--bottom .card__link {
-  color: #353535;
-}
-
-.main__wrapper .article__image .deck__cards .card--three .card--bottom .card__link:hover {
-  color: white;
-  background-color: #353535;
 }
 
 .footer {
@@ -303,13 +267,13 @@
   color: white;
 }
 
-.footer .footer__section {
+.footer__section {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-.footer .footer--right {
+.footer--right {
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -319,7 +283,7 @@
           align-items: center;
 }
 
-.footer .footer--right .footer__text {
+.footer__text {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -328,21 +292,21 @@
   margin-right: 10px;
 }
 
-.footer .footer--right .media__icons {
+.footer__icons {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   text-align: left;
 }
 
-.footer .footer--right .media__icons .icons .fa {
+.footer .media-icons .fa {
   font-size: 25px;
   background-color: black;
   color: white;
   margin: 5px;
 }
 
-.footer .footer--right .media__icons .icons .fa:hover {
+.footer .media-icons .fa:hover {
   color: #777777;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 $cards-color: rgb(53, 53, 53);
@@ -12,41 +13,49 @@ $cards-color: rgb(53, 53, 53);
 }
 
 
-.nav__list {
-    display: flex;
+.nav {
+    width: auto;
 
-    .nav__item {
+    &__list {
+        display: flex;
+    }
+    
+    &__item {
         list-style-type: none;
         flex: 1;        
         text-align: center;
         background-color: black;
+    }
 
-        .nav__link {
-            text-decoration: none;
-            display: block;
-            padding: 17px 0;   
-            background-color: black;  
-            font-size: 21px;
-            color: white;
-            letter-spacing: 2px;
-         
-            &:hover {
-                background-color: rgb(49, 49, 49);
-            }
+    
+    &__link {
+        text-decoration: none;
+        display: block;
+        padding: 17px 0;   
+        background-color: black;  
+        font-size: 21px;
+        color: white;
+        letter-spacing: 2px;
+        
+        &:hover {
+            background-color: rgb(49, 49, 49);
         }
     }
 }
+    
 
-.hero__section {
 
-    .hero__image {
+
+.hero {
+
+    &__image {
         width: 100%;
         height: 100vh;
         opacity: 0.6;
     }
 
 
-    .hero__header {
+    &__header {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -60,79 +69,79 @@ $cards-color: rgb(53, 53, 53);
         width: fit-content;
     }
 
-    .hero__button--group {
+    &__buttons {
         position: absolute;
         top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: auto;
         margin: 25px 0;
-        .hero__button {
-            padding: 15px 30px;
-            margin: 0 10px;
-            border: none;
-            font-size: 18px;
-            border-radius: 7px;
-        }        
-        
-        .hero__button--active {
-            @include button-hero();
-        }
+    }
 
-        .hero__button--inactive {
-            &:hover {
-                @include button-hero();
-                padding-left: 28px;
-            }
+    &__btn {
+        padding: 15px 30px;
+        margin: 0 10px;
+        border: none;
+        font-size: 18px;
+        border-radius: 7px;
+    }        
+    
+    &__btn--active {
+        @include button-hero();
+    }
+
+    &__btn--inactive {
+        &:hover {
+            @include button-hero();
+            padding-left: 28px;
         }
     }
+    
 }
 
-.main__wrapper {
+.wrapper {
     padding: 15px 25px 0 25px;
-    font-size: 19px;
-   
-    .section__front {
-
-        .front__header {
-            text-align: center;
-            font-size: 35px;
-            font-weight: 650;
-            padding: 30px 0;
-            font-family: Tahoma;
-        }
+    font-size: 19px;   
+  
+    .section__header {
+        text-align: center;
+        font-size: 35px;
+        font-weight: 650;
+        padding: 30px 0;
+        font-family: Tahoma;
     }
 
-    .horizontal--line {
+    .horizontal-line {
         margin: 30px;
     }
 
-    .section__bottom {
+    .section-bottom {
 
-        .bottom__header {
+        &__header {
             font-size: 35px;
             margin-bottom: 20px;
         }
-        .bottom__text {
+
+        &__text {
             margin: 30px 0;
         }
 
-        .bottom__list {
+        &__list {
             list-style-type: none;
             display: flex;
             margin: 30px 0;
             text-align: center;
+        }
     
-            .bottom__item {
+        &__item {
                 flex: 1;
                 font-size: 15px;
-    
-                .bottom__image {
-                    width: 220px;
-                    height: 200px;
-                }    
-            }
         }
+    
+        &__image {
+            width: 220px;
+            height: 200px;
+        }    
     }
 
     .article__image{
@@ -142,10 +151,11 @@ $cards-color: rgb(53, 53, 53);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        
-       
+    }
 
-        .deck__header{
+    .article-deck {
+
+        &__header{
             position: relative;
             text-align: center;
             font-size: 45px;
@@ -153,12 +163,12 @@ $cards-color: rgb(53, 53, 53);
             color: $cards-color;
             padding: 20px 0;
         }
-
-        .deck__cards {
+    
+        &__cards {
             display: flex;
             justify-content: center;
             padding-bottom: 30px;
-
+    
             .card {
                 display: flex;
                 flex-direction: column;
@@ -168,133 +178,72 @@ $cards-color: rgb(53, 53, 53);
                 background-color: white;
                 border-radius: 7px;
                 
-                .card__inner {
-                    flex: 1 1 200px;
-                   
-                    .card--stiched {
-                        z-index: 10;
-                        margin-top: 10px;
-                        padding-top: 7px;
-                        width: 280px;
-                        height: 42px;
-                        font-size: 25px;
-                        text-align: center;
-                        color: #fff;
-                        box-shadow: 0px 2px 5px #888888;
-                        background: $cards-color;
-                        transform: rotate(-25deg);
-                        position: absolute;
-                        left: -95px;
-                        top: 0;
-                    }
+                &__inner {
+                    flex: 1 1 250px;
                 }
-
-                .card--top {
                     
-                    .card__inner--description {
-                        margin: 100px 0 20px 0;
-                        text-align: center;
+                &--stiched {
+                    z-index: 10;
+                    margin-top: 10px;
+                    padding-top: 7px;
+                    width: 280px;
+                    height: 42px;
+                    font-size: 25px;
+                    text-align: center;
+                    color: #fff;
+                    box-shadow: 0px 2px 5px #888888;
+                    background: $cards-color;
+                    transform: rotate(-25deg);
+                    position: absolute;
+                    left: -95px;
+                    top: 0;
+                }
+                        
+                &__inner--description {
+                    margin: 100px 0 20px 0;
+                    text-align: center;
+                }
 
-                        .card__text {
-                            
-                            span {
-                                color: $cards-color;
-                                font-weight: 700;
-                                margin-right: 10px
-                            }
-                        }
+                &__text {
+                    span {
+                        color: $cards-color;
+                        font-weight: 700;
+                        margin-right: 10px
                     }
                 }
 
-                .card--bottom {
+                &--bottom {
                     padding: 30px;
                     background-color: $cards-color;
                     color: white;
-
-                    .card__header{
-                        margin-top: 50px;
-                        .header__span {
-                            font-size: 55px;
-                        }
-                    }
-
-                    .card__link {
-                        padding: 10px 15px;
-                        display: block;
-                        width: 150px;
-                        color: $cards-color;
-                        background-color: white;
-                        border-radius: 10px;
-                        text-decoration: none;
-                        text-align: center;
-                        font-weight: 700;
-                        font-size: 18px;
-                        margin: 0 auto;
-                        margin-top: 20px;
-
-                        &:hover {
-                            background-color: $cards-color;
-                            color: white;
-                            border: 2px solid white
-                        }
-                    }
                 }
-            }
 
-            .card--two {
-                .card--top{
-                    .card--stiched{
+                &__header{
+                    margin-top: 50px;
+                }
+
+                &__span-bot {
+                    font-size: 55px;
+                }
+
+                &__link {
+                    padding: 10px 15px;
+                    display: block;
+                    width: 150px;
+                    color: $cards-color;
+                    background-color: white;
+                    border-radius: 10px;
+                    text-decoration: none;
+                    text-align: center;
+                    font-weight: 700;
+                    font-size: 18px;
+                    margin: 0 auto;
+                    margin-top: 20px;
+
+                    &:hover {
                         background-color: $cards-color;
-                    }
-
-                    .card__inner__description {
-                        .card__text{
-                            span {
-                                color: $cards-color;
-                            }
-                        }
-                    }
-                }
-
-                .card--bottom {
-                    background-color: $cards-color;
-
-                    .card__link {
-                        color: $cards-color;
-
-                        &:hover {
-                            color: white;
-                            background-color: $cards-color;
-                        }
-                    }
-                }
-            }
-
-            .card--three {
-                .card--top{
-                    .card--stiched{
-                        background-color: $cards-color;
-                    }
-
-                    .card__inner__description {
-                        .card__text{
-                            span {
-                                color: $cards-color;
-                            }
-                        }
-                    }
-                }
-
-                .card--bottom {
-                    background-color: $cards-color;
-
-                    .card__link {
-                        color: $cards-color;
-
-                        &:hover {
-                            color: white;
-                            background-color: $cards-color;
-                        }
+                        color: white;
+                        border: 2px solid white;
                     }
                 }
             }
@@ -302,6 +251,7 @@ $cards-color: rgb(53, 53, 53);
     }
 }
 
+    // Footer
 
 .footer {
     display: flex;
@@ -310,37 +260,40 @@ $cards-color: rgb(53, 53, 53);
     background-color: black;
     color: white;
 
-    .footer__section {
+    &__section {
        flex: 1;
     }
 
-    .footer--right {
+    &--right {
         text-align: center;
         display: flex;
         align-items: center;
+    }
         
-        .footer__text {
-            flex: 1;
-            text-align: right;
-            font-size: 22px;
-            margin-right: 10px;
-        }
-        .media__icons {
-            flex: 1;
-            text-align: left;
-            .icons {
-               
-                .fa {
-                    font-size: 25px;
-                    background-color: black;
-                    color: white;
-                    margin: 5px;
+    &__text {
+        flex: 1;
+        text-align: right;
+        font-size: 22px;
+        margin-right: 10px;
+    }
 
-                    &:hover{
-                        color: rgb(119, 119, 119);
-                    }
-                }
+    &__icons {
+        flex: 1;
+        text-align: left;
+    }
+
+    .media-icons {
+        
+        .fa {
+            font-size: 25px;
+            background-color: black;
+            color: white;
+            margin: 5px;
+
+            &:hover{
+                color: rgb(119, 119, 119);
             }
         }
     }
 }
+    
