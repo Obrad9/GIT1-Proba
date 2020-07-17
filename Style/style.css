@@ -215,8 +215,8 @@
   flex: 1;
 }
 .footer--right {
-  text-align: center;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .footer__text {
