@@ -21,7 +21,7 @@
   display: block;
   padding: 17px 0;
   background-color: #000;
-  font-size: 21px;
+  font-size: 1.5rem;
   color: white;
   letter-spacing: 2px;
 }
@@ -42,7 +42,7 @@
   background-color: black;
   padding: 5px 10px;
   color: white;
-  font-size: 45px;
+  font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
   width: -webkit-fit-content;
@@ -61,7 +61,7 @@
   padding: 15px 30px;
   margin: 0 10px;
   border: none;
-  font-size: 18px;
+  font-size: 1.2rem;
   border-radius: 7px;
 }
 .hero__btn--active {
@@ -78,6 +78,42 @@
   padding-left: 28px;
 }
 
+.wrapper {
+  padding: 15px 25px 0 25px;
+  font-size: 1.2rem;
+}
+.wrapper .section__header {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 650;
+  padding: 30px 0;
+  font-family: Tahoma;
+}
+.wrapper .horizontal-line {
+  margin: 30px;
+}
+.wrapper .section-bottom__header {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+.wrapper .section-bottom__text {
+  margin: 30px 0;
+}
+.wrapper .section-bottom__list {
+  list-style-type: none;
+  display: flex;
+  margin: 30px 0;
+  text-align: center;
+}
+.wrapper .section-bottom__item {
+  flex: 1;
+  font-size: 1rem;
+}
+.wrapper .section-bottom__image {
+  width: 220px;
+  height: 200px;
+}
+
 .article__image {
   background-image: url("../Img/gym.png");
   width: 100%;
@@ -90,7 +126,7 @@
 .article-deck__header {
   position: relative;
   text-align: center;
-  font-size: 45px;
+  font-size: 3rem;
   font-weight: 700;
   color: #353535;
   padding: 20px 0;
@@ -118,7 +154,7 @@
   padding-top: 7px;
   width: 280px;
   height: 42px;
-  font-size: 25px;
+  font-size: 1.5rem;
   text-align: center;
   color: #fff;
   box-shadow: 0px 2px 5px #888888;
@@ -146,7 +182,7 @@
   margin-top: 50px;
 }
 .article-deck__cards .card__span-bot {
-  font-size: 55px;
+  font-size: 3rem;
 }
 .article-deck__cards .card__link {
   padding: 10px 15px;
@@ -158,7 +194,7 @@
   text-decoration: none;
   text-align: center;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.2rem;
   margin: 0 auto;
   margin-top: 20px;
 }
@@ -166,42 +202,6 @@
   background-color: #353535;
   color: white;
   border: 2px solid white;
-}
-
-.wrapper {
-  padding: 15px 25px 0 25px;
-  font-size: 19px;
-}
-.wrapper .section__header {
-  text-align: center;
-  font-size: 35px;
-  font-weight: 650;
-  padding: 30px 0;
-  font-family: Tahoma;
-}
-.wrapper .horizontal-line {
-  margin: 30px;
-}
-.wrapper .section-bottom__header {
-  font-size: 35px;
-  margin-bottom: 20px;
-}
-.wrapper .section-bottom__text {
-  margin: 30px 0;
-}
-.wrapper .section-bottom__list {
-  list-style-type: none;
-  display: flex;
-  margin: 30px 0;
-  text-align: center;
-}
-.wrapper .section-bottom__item {
-  flex: 1;
-  font-size: 15px;
-}
-.wrapper .section-bottom__image {
-  width: 220px;
-  height: 200px;
 }
 
 .footer {
@@ -222,15 +222,18 @@
 .footer__text {
   flex: 1;
   text-align: right;
-  font-size: 22px;
+  font-size: 1.5rem;
   margin-right: 10px;
 }
 .footer__icons {
   flex: 1;
   text-align: left;
 }
+.footer .media-icons {
+  text-decoration: none;
+}
 .footer .media-icons .fa {
-  font-size: 25px;
+  font-size: 1.5rem;
   background-color: black;
   color: white;
   margin: 5px;

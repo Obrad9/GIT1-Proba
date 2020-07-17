@@ -4,14 +4,14 @@
     box-sizing: border-box;
 }
 
-@import 'variables/variables';
-@import 'variables/mixins';
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
 
 
 @import 'layout/nav';
 @import 'layout/hero';
-@import 'layout/cards';
 @import 'layout/section';
+@import 'layout/cards';
 @import 'layout/footer';
 
 
