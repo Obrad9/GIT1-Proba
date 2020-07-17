@@ -4,15 +4,15 @@
     box-sizing: border-box;
 }
 
-@import 'variables/variables.scss';
-@import 'variables/mixins.scss';
+@import 'variables/variables';
+@import 'variables/mixins';
 
-@import 'layout/nav.scss';
-@import 'layout/hero.scss';
-@import 'layout/cards.scss';
-@import 'layout/section.scss';
-@import 'layout/footer.scss';
 
+@import 'layout/nav';
+@import 'layout/hero';
+@import 'layout/cards';
+@import 'layout/section';
+@import 'layout/footer';
 
 
 
